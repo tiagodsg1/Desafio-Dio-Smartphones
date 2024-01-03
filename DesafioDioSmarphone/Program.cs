@@ -1,7 +1,5 @@
-﻿using DesafioPOO.Models;
-
+﻿using DesafioDioSmarphone.Models;
 using System;
-using Models;
 
 class Program
 {
