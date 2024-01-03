@@ -1,8 +1,15 @@
-namespace DesafioPOO.Models
+namespace DesafioDioSmarphone.Models
 {
-    // TODO: Herdar da classe "Smartphone"
-    public class Iphone
+    public class Iphone : Celular
     {
-        // TODO: Sobrescrever o método "InstalarAplicativo"
+        public override void FazerChamada(string numero)
+        {
+            Console.WriteLine($"Chamada do iPhone {Modelo} para o número {numero}.");
+        }
+
+        public override void EnviarMensagem(string numero, string mensagem)
+        {
+            Console.WriteLine($"Enviando iMessage do iPhone {Modelo} para o número {numero}: {mensagem}");
+        }
     }
 }
