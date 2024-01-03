@@ -1,8 +1,16 @@
-namespace DesafioPOO.Models
+namespace DesafioDioSmarphone.Models
 {
-    // TODO: Herdar da classe "Smartphone"
-    public class Nokia
+    public class Nokia : Celular
     {
-        // TODO: Sobrescrever o método "InstalarAplicativo"
+        public override void FazerChamada(string numero)
+        {
+            Console.WriteLine($"Chamada do celular {Marca} ({Modelo}) para o número {numero}.");
+        }
+
+        public override void EnviarMensagem(string numero, string mensagem)
+        {
+            Console.WriteLine($"Enviando mensagem do celular {Marca} ({Modelo}) para o número {numero}: {mensagem}");
+        }
+
     }
 }
